@@ -59,7 +59,7 @@ import { useNavigate } from 'react-router-dom';
       <h1>User Data Input Form:</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" value={name} onChange={(event) => setName(event.target.value)} required />
+        <input type="text" id="name" name="name" value={name} onChange={(event) => setName(event.target.value)} required pattern="[A-Za-z]+"/>
 
         <label htmlFor="email">Email:</label>
         <input type="email" id="email" name="email" value={email} onChange={(event) => setEmail(event.target.value)} required />
