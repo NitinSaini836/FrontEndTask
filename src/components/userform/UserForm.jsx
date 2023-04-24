@@ -68,7 +68,7 @@ import { useNavigate } from 'react-router-dom';
         <input type="number" id="age" min="18" max="80" name="age" value={age} onChange={(event) => setAge(event.target.value)} required />
 
         <label htmlFor="percentage">Percentage%:</label>
-        <input type="text" id="Percentage" name="percentage" min="33" max="80" value={parentage} onChange={(event) => setParentage(event.target.value)} required />
+        <input type="text" id="Percentage" name="percentage" min="33" max="100" value={parentage} onChange={(event) => setParentage(event.target.value)} required />
 
         {education.map((educationItem, index) => (
           <div key={index}>
